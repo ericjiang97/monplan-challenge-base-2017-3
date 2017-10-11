@@ -5,7 +5,7 @@ import App from './app/App.js'
 import registerServiceWorker from './registerServiceWorker'
 
 render(
-    <App />, 
+  <App />,
     document.getElementById('root')
 )
 registerServiceWorker()
