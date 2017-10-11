@@ -22,7 +22,9 @@ After selecting an unit that they are interested in, they can view more informat
 
 APIs have been provided below.
 
-An example component of using the API using `fetch` polyfill is available as well. We recommend you to use `fetch` or `axios` however you are free to use any another library, just NO `ajax` or `jQuery`.
+An example component of using the API using `fetch` polyfill is available as well `/src/components/example`. We recommend you to use `fetch` or `axios` however you are free to use any another library, just NO `ajax` or `jQuery`.
+
+Please make it pretty and user friendly as our project has to be this.
 
 # Good Tutorials to Follow
 You can follow some of the tutorials below
