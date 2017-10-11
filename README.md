@@ -12,6 +12,8 @@ This Part of the monPlan 2018 Summer Hiring Interview Process
 4. Run `yarn` to install all pre-built packages
 5. Run `yarn start` to begin rendering the website
 
+You are **expected** to handle errors
+
 # Your Goal
 Your Goal is to design a 'Unit Handbook Viewer' where students are
 able to search a unit code and then select a unit that they are interested in. 
