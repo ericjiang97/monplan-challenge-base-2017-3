@@ -26,6 +26,8 @@ An example component of using the API using `fetch` polyfill is available as wel
 
 Please make it pretty and user friendly as our project has to be this.
 
+Please also follow the following commit guidelines to make it pretty: https://seesparkbox.com/foundry/semantic_commit_messages
+
 # Good Tutorials to Follow
 You can follow some of the tutorials below
 - https://reactjs.org/ 
