@@ -28,6 +28,9 @@ Please make it pretty and user friendly as our project has to be this.
 
 Please also follow the following commit guidelines to make it pretty: https://seesparkbox.com/foundry/semantic_commit_messages
 
+You also have to make it device responsive using CSS.
+
+You may want to use Redux as it will make it easier to use. HINT: this may actually improve your application ;)
 # Good Tutorials to Follow
 You can follow some of the tutorials below
 - https://reactjs.org/ 
