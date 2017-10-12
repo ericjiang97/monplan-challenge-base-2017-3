@@ -31,3 +31,10 @@ The areas that you will be marked on will be as follows:
   - Have you used 'tags' (i.e. `[DOC]`) to show what you changed?
   - Have you added a Git Commit Tag document so that contributors can come onboard and know how to commit properly?
   - Did you use a TODO.md or Issue to track tasks?
+
+- UI/UX 
+  - Is it device responsive?
+    - How have you made it device responsive? CSS? Other framework? Flexboxes? Min-width/Max-Width?
+  - Have you used a prebuilt UI Framework?
+  - Have you asked your friends for feedback (record this so we can see)?
+  - How usable is your app?
