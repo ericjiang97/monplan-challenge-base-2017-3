@@ -2,21 +2,20 @@
 This Part of the monPlan 2018 Summer Hiring Interview Process
 
 # Dependencies (Installation)
-1. NodeJS we suggest you use NVM (https://github.com/creationix/nvm)
+1. Node.js (https://nodejs.org) (we suggest you use NVM (https://github.com/creationix/nvm) to use our preferred Node.js version)
 2. Yarn (https://yarnpkg.com/en/docs/install)
 
 # Instructions before starting the challenge
-1. Fork this repository
-2. Install Dependencies
-3. cd into repository
+1. Install required [Dependencies](#dependencies-installation)
+2. Fork and clone this repository
+3. `cd` into repository
 4. Run `yarn` to install all pre-built packages
 5. Run `yarn start` to begin rendering the website
 
 You are **expected** to handle errors
 
 # Your Goal
-Your Goal is to design a 'Unit Handbook Viewer' where students are
-able to search a unit code and then select a unit that they are interested in. 
+Your Goal is to design a 'Unit Handbook Viewer' where students are able to search a unit code and then select a unit that they are interested in. 
 
 After selecting an unit that they are interested in, they can view more information about that unit.
 
@@ -41,12 +40,12 @@ Some good tutorials on ReactJS and Redux:
 - https://egghead.io/courses/getting-started-with-redux 
 
 # API Calls
-The following are some API calls that you may need. **Some parts of the sample response has been hidden because to shortern it**
+The following are some API calls that you may need. **Some parts of the sample response has been hidden for brevity**
 
 Base route: https://monplan-api-dev.appspot.com
 
 # GET all units 
-To get every unit do a API call, just do a GET request `/basic/units` 
+To get a list of all units, GET `/basic/units` 
 
 ```
 [
@@ -67,8 +66,7 @@ To get every unit do a API call, just do a GET request `/basic/units`
 ]
 ```
 # GET a specific unit by unit code
-You get more information about a specific unit using
-GET `/units/{unitCode}`
+You get more information about a specific unit using GET `/units/{unitCode}`
 ```
 {
    "preqs":"VCE Mathematics Methods or Specialist Mathematics units 3 \u0026 4 with a study score of 25 or MTH1010.Note: For 2016 Further Mathematics with a study score of 35 will be accepted.",
