@@ -49,6 +49,7 @@ To get a list of all units, [GET `/basic/units`](https://monplan-api-dev.appspot
 
 <details>
 <summary>GET `/basic/units`</summary>
+
 ```
 [
    {
@@ -67,6 +68,7 @@ To get a list of all units, [GET `/basic/units`](https://monplan-api-dev.appspot
    //more units hidden below
 ]
 ```
+
 </details>
 
 # GET a specific unit by unit code
@@ -74,6 +76,7 @@ You get more information about a specific unit using [GET `/units/{unitCode}`](h
 
 <details>
 <summary>GET `/units/{unitCode}`</summary>
+
 ```
 {
    "preqs":"VCE Mathematics Methods or Specialist Mathematics units 3 \u0026 4 with a study score of 25 or MTH1010.Note: For 2016 Further Mathematics with a study score of 35 will be accepted.",
@@ -109,4 +112,5 @@ You get more information about a specific unit using [GET `/units/{unitCode}`](h
    "eftsl":0.125
 }
 ```
+
 </details>
