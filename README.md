@@ -48,7 +48,7 @@ Base route: https://monplan-api-dev.appspot.com
 To get a list of all units, [GET `/basic/units`](https://monplan-api-dev.appspot.com/basic/units)
 
 <details>
-<summary>GET `/basic/units`</summary>
+<summary>GET /basic/units</summary>
 
 ```
 [
@@ -75,7 +75,7 @@ To get a list of all units, [GET `/basic/units`](https://monplan-api-dev.appspot
 You get more information about a specific unit using [GET `/units/{unitCode}`](https://monplan-api-dev.appspot.com/units/FIT1045)
 
 <details>
-<summary>GET `/units/{unitCode}`</summary>
+<summary>GET /units/{unitCode}</summary>
 
 ```
 {
