@@ -15,8 +15,10 @@ class App extends Component {
         </header>
         <div>
           <SearchBar />
-          <UnitList />
-          <UnitDetail />
+          <div className="row">
+            <UnitList />
+            <UnitDetail />
+          </div>
         </div>
       </div>
     )

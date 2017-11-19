@@ -9,7 +9,7 @@ class UnitDetail extends Component {
     }
 
     return (
-      <div>
+      <div className="col-sm-8">
         <div>Unit code: {this.props.unit.unitCode}</div>
         <div>Unit name: {this.props.unit.unitName}</div>
       </div>
