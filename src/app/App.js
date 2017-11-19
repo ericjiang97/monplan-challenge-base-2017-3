@@ -3,6 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import SearchBar from '../containers/search_bar'
 import UnitList from '../containers/unit_list'
+import UnitDetail from '../containers/unit_detail'
 
 class App extends Component {
   render () {
@@ -15,6 +16,7 @@ class App extends Component {
         <div>
           <SearchBar />
           <UnitList />
+          <UnitDetail />
         </div>
       </div>
     )

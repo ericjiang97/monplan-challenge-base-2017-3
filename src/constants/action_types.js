@@ -1,0 +1,1 @@
+export const UNIT_SELECTED = 'UNIT_SELECTED';
