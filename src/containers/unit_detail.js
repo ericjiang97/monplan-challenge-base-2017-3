@@ -8,7 +8,7 @@ class UnitDetail extends Component {
     const results = this.props.searchResultUnits;
     const unit = this.props.activeUnit;
 
-    if (!units || !results){
+    if (!units || !results || !unit){
       return <div>  </div>
     }
 
@@ -19,9 +19,57 @@ class UnitDetail extends Component {
     const data = unit.data;
     return (
       <div className="col-sm-8">
-        <h3>{data.unitCode}: {data.unitName}</h3>
+        <h2 className="unit-code-name">{data.unitCode} - {data.unitName}</h2>
         <br />
-        <p>{data.description}</p>
+        <div className="unit-detail">
+          <h4>{data.creditPoints} points, SCA Band {data.scaBand}, {data.eftsl} EFTSL</h4>
+          <br />
+
+          <strong>Offered</strong>
+          <br />
+          {data.locationAndTime.map(offered => {
+            return <div key={offered.location}>
+              {offered.location}
+              {offered.time.map(sem => {
+                return <div key={sem}>{sem}</div>
+              })}
+              <br />
+            </div>
+          })}
+
+          <strong>Prerequisites</strong>
+          <br />
+          {data.preqs}
+          <br /><br />
+
+          <strong>Prohibitions</strong>
+          <br />
+          {data.proh}
+          <br /><br />
+
+          <strong>Faculty</strong>
+          <br />
+          {data.faculty}
+          <br /><br />
+
+          <strong>Synopsis</strong>
+          <br />
+          {data.description}
+          <br /><br />
+
+          <strong>Enjoy score</strong>
+          <br />
+          <progress value={data.enjoyScore} max="5"></progress>
+          <br />
+          <p>{data.enjoyScore.toFixed(2)}</p>
+
+          <strong>Learn score</strong>
+          <br />
+          <progress value={data.learnScore} max="5"></progress>
+          <br />
+          <p>{data.learnScore.toFixed(2)}</p>
+
+        </div>
       </div>
     );
   }

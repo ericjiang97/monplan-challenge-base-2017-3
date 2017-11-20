@@ -17,7 +17,7 @@ class UnitList extends Component {
           <li
             key = {unit.unitCode}
             onClick={() => this.props.selectUnit(unit)}
-            className="list-group-item">{unit.unitCode} {unit.unitName}</li>
+            className="list-group-item">{unit.unitCode} - {unit.unitName}</li>
         )
       })
     )
