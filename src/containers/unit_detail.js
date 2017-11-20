@@ -39,12 +39,12 @@ class UnitDetail extends Component {
 
           <strong>Prerequisites</strong>
           <br />
-          {data.preqs}
+          {(data.preqs)? data.preqs : 'None'}
           <br /><br />
 
           <strong>Prohibitions</strong>
           <br />
-          {data.proh}
+          {(data.proh)? data.proh : 'None'}
           <br /><br />
 
           <strong>Faculty</strong>
