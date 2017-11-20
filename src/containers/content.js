@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import SearchBar from '../containers/search_bar'
 import UnitList from '../containers/unit_list'
 import UnitDetail from '../containers/unit_detail'
-import { fetchAllUnits } from '../actions/index';
+import { fetchAllUnits } from '../actions/action_fetch_all_units';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 

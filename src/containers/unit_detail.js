@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class UnitDetail extends Component {
   render() {
     if (!this.props.unit){
-      return <div>Select a unit to get started.</div>
+      return <div> </div>
     }
 
     return (

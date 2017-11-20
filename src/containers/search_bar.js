@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchAllUnits } from '../actions/index';
+import { searchUnits } from '../actions/action_search_units';
 import { bindActionCreators } from 'redux';
 
 
@@ -20,6 +20,7 @@ class SearchBar extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
+    this.props.searchUnits(this.state.term);
   }
 
   render() {
@@ -40,12 +41,12 @@ class SearchBar extends Component {
 
 function mapStateToProps(state){
   return {
-    units: state.units
+    searchResultUnits: state.searchResultUnits
   };
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({ fetchAllUnits }, dispatch)
+  return bindActionCreators({ searchUnits }, dispatch)
 }
 
 export default connect(mapStateToProps , mapDispatchToProps)(SearchBar);

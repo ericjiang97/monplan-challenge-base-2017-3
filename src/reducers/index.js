@@ -4,7 +4,7 @@ import ActiveUnitReducer from './reducer_active_unit';
 import AllUnitsReducer from './reducer_all_units';
 
 const rootReducer = combineReducers({
-  units: UnitListReducer,
+  searchResultUnits: UnitListReducer,
   activeUnit: ActiveUnitReducer,
   allUnits: AllUnitsReducer
 });

@@ -1,2 +1,3 @@
 export const UNIT_SELECTED = 'UNIT_SELECTED';
 export const FETCH_ALL_UNITS = 'FETCH_ALL_UNITS';
+export const SEARCH_UNITS = 'SEARCH_UNITS';

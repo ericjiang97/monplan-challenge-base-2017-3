@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { selectUnit } from '../actions/index';
+import { selectUnit } from '../actions/action_select_unit';
 import { bindActionCreators } from 'redux';
 
 class UnitList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.renderList = this.renderList.bind(this);
+  }
+
   renderList() {
     return (
-      this.props.units.map((unit)=>{
+      this.props.searchResultUnits.map((unit)=>{
         return (
           <li
             key = {unit.unitCode}
@@ -18,6 +24,10 @@ class UnitList extends Component {
   }
 
   render(){
+    if (!this.props.searchResultUnits){
+      return <div >Search for a unit to get started </div>;
+    }
+
     return (
       <ul className="list-group col-sm-4">
         {this.renderList()}
@@ -28,12 +38,12 @@ class UnitList extends Component {
 
 function mapStateToProps(state){
   return {
-    units: state.units
+    searchResultUnits: state.searchResultUnits
   };
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({selectUnit:selectUnit}, dispatch)
+  return bindActionCreators({ selectUnit }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(UnitList);
