@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import SearchBar from '../containers/search_bar'
-import UnitList from '../containers/unit_list'
-import UnitDetail from '../containers/unit_detail'
+import Content from '../containers/content'
 
 class App extends Component {
   render () {
@@ -13,13 +11,7 @@ class App extends Component {
           <img src={logo} className='App-logo' alt='logo' />
           <h1 className='App-title'>Monash Handbook Unit Viewer</h1>
         </header>
-        <div>
-          <SearchBar />
-          <div className="row">
-            <UnitList />
-            <UnitDetail />
-          </div>
-        </div>
+        <Content />
       </div>
     )
   }
