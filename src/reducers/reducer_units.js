@@ -16,7 +16,7 @@ export default function(state = initialState, action){
 
     case SEARCH_UNITS:
       const searchTerm = action.payload.toLowerCase();
-      console.log(state.allUnits);
+      
       var resultUnits = state.allUnits.data.filter((unit) => {
         return unit.unitName.toLowerCase().indexOf(searchTerm) !== -1
         || unit.unitCode.toLowerCase().indexOf(searchTerm) !== -1

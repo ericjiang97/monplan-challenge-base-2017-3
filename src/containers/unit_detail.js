@@ -4,18 +4,24 @@ import { connect } from 'react-redux';
 
 class UnitDetail extends Component {
   render() {
-    if (!this.props.allUnits || !this.props.searchResultUnits){
+    const units = this.props.allUnits;
+    const results = this.props.searchResultUnits;
+    const unit = this.props.activeUnit;
+
+    if (!units || !results){
       return <div>  </div>
     }
 
-    if (!this.props.activeUnit){
-      return <div>Select a unit to get started</div>
+    if (results.length !== 0 && !unit){
+      return <div>Select a unit to view detail</div>
     }
 
+    const data = unit.data;
     return (
       <div className="col-sm-8">
-        <div>Unit code: {this.props.activeUnit.unitCode}</div>
-        <div>Unit name: {this.props.activeUnit.unitName}</div>
+        <h3>{data.unitCode}: {data.unitName}</h3>
+        <br />
+        <p>{data.description}</p>
       </div>
     );
   }

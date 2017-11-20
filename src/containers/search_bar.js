@@ -39,14 +39,14 @@ class SearchBar extends Component {
   }
 }
 
-function mapStateToProps(state){
-  return {
-    searchResultUnits: state.searchResultUnits
-  };
-}
+// function mapStateToProps(state){
+//   return {
+//     searchResultUnits: state.searchResultUnits
+//   };
+// }
 
 function mapDispatchToProps(dispatch){
   return bindActionCreators({ searchUnits }, dispatch)
 }
 
-export default connect(mapStateToProps , mapDispatchToProps)(SearchBar);
+export default connect(null , mapDispatchToProps)(SearchBar);

@@ -17,7 +17,7 @@ class UnitList extends Component {
           <li
             key = {unit.unitCode}
             onClick={() => this.props.selectUnit(unit)}
-            className="list-group-item">{unit.unitCode}</li>
+            className="list-group-item">{unit.unitCode} {unit.unitName}</li>
         )
       })
     )
@@ -42,7 +42,8 @@ class UnitList extends Component {
 
 function mapStateToProps(state){
   return {
-    searchResultUnits: state.units.searchResultUnits
+    searchResultUnits: state.units.searchResultUnits,
+    activeUnit: state.activeUnit
   };
 }
 
