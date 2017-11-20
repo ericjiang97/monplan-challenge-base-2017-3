@@ -4,14 +4,18 @@ import { connect } from 'react-redux';
 
 class UnitDetail extends Component {
   render() {
-    if (!this.props.unit){
-      return <div> </div>
+    if (!this.props.allUnits || !this.props.searchResultUnits){
+      return <div>  </div>
+    }
+
+    if (!this.props.activeUnit){
+      return <div>Select a unit to get started</div>
     }
 
     return (
       <div className="col-sm-8">
-        <div>Unit code: {this.props.unit.unitCode}</div>
-        <div>Unit name: {this.props.unit.unitName}</div>
+        <div>Unit code: {this.props.activeUnit.unitCode}</div>
+        <div>Unit name: {this.props.activeUnit.unitName}</div>
       </div>
     );
   }
@@ -19,7 +23,9 @@ class UnitDetail extends Component {
 
 function mapStateToProps(state){
   return {
-    unit: state.activeUnit
+    activeUnit: state.activeUnit,
+    searchResultUnits: state.units.searchResultUnits,
+    allUnits: state.units.allUnits
   };
 }
 
