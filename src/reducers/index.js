@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
-import UnitListReducer from './reducer_unit_list';
+import UnitsReducer from './reducer_units';
 import ActiveUnitReducer from './reducer_active_unit';
-import AllUnitsReducer from './reducer_all_units';
 
 const rootReducer = combineReducers({
-  searchResultUnits: UnitListReducer,
+  units: UnitsReducer,
   activeUnit: ActiveUnitReducer,
-  allUnits: AllUnitsReducer
 });
 
 export default rootReducer;

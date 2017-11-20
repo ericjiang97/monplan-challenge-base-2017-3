@@ -28,6 +28,10 @@ class UnitList extends Component {
       return <div >Search for a unit to get started </div>;
     }
 
+    if (this.props.searchResultUnits.length === 0){
+      return <div > No units found </div>;
+    }
+
     return (
       <ul className="list-group col-sm-4">
         {this.renderList()}
@@ -38,7 +42,7 @@ class UnitList extends Component {
 
 function mapStateToProps(state){
   return {
-    searchResultUnits: state.searchResultUnits
+    searchResultUnits: state.units.searchResultUnits
   };
 }
 

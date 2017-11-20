@@ -30,7 +30,7 @@ class Content extends Component {
 
 function mapStateToProps(state){
   return {
-    allUnits: state.allUnits
+    allUnits: state.units.allUnits
   };
 }
 
