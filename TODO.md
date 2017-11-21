@@ -2,13 +2,13 @@
 
 ### Short-term
 
-- [ ] Clear unit detail after new search
+- [X] Clear unit detail after new search
 - [ ] Conditionally rendering handle enjoy and learn score no response
 - [ ] Set up GitHub page
 - [ ] Update README.md
-- [ ] Use PropTypes
+- [X] Use PropTypes
 - [ ] Use JSDoc
-- [ ] Use StandardJS
+- [X] Use StandardJS
 
 ### Long-term
 
