@@ -43,7 +43,6 @@ class UnitList extends Component {
 function mapStateToProps(state){
   return {
     searchResultUnits: state.units.searchResultUnits,
-    activeUnit: state.activeUnit
   };
 }
 

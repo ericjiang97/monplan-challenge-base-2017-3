@@ -8,7 +8,7 @@ class UnitDetail extends Component {
     const results = this.props.searchResultUnits;
     const unit = this.props.activeUnit;
 
-    if (!units || !results || !unit){
+    if (!units || !results || results.length === 0){
       return <div>  </div>
     }
 
@@ -77,9 +77,9 @@ class UnitDetail extends Component {
 
 function mapStateToProps(state){
   return {
-    activeUnit: state.activeUnit,
+    activeUnit: state.units.activeUnit,
     searchResultUnits: state.units.searchResultUnits,
-    allUnits: state.units.allUnits
+    allUnits: state.units.allUnits,
   };
 }
 
