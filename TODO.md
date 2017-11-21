@@ -1,16 +1,16 @@
 # TODO
 
-### Before 22/11/2017
+### Short-term
 
-- [ ] Clear unit detail after new search
+- [x] Clear unit detail after new search
 - [ ] Conditionally rendering handle enjoy and learn score no response
 - [ ] Set up GitHub page
 - [ ] Update README.md
-- [ ] Use PropTypes
+- [X] Use PropTypes
 - [ ] Use JSDoc
 - [ ] Use StandardJS
 
-### After 22/11/2017
+### Long-term
 
 - [ ] Add area of study information
 - [ ] Improve fetch all units time on app load
