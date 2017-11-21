@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { searchUnits } from '../actions/action_search_units';
 import { bindActionCreators } from 'redux';
-
+import PropTypes from 'prop-types'
 
 class SearchBar extends Component {
   constructor(props) {
@@ -39,11 +39,9 @@ class SearchBar extends Component {
   }
 }
 
-// function mapStateToProps(state){
-//   return {
-//     searchResultUnits: state.searchResultUnits
-//   };
-// }
+SearchBar.propTypes = {
+  searchUnits: PropTypes.func
+}
 
 function mapDispatchToProps(dispatch){
   return bindActionCreators({ searchUnits }, dispatch)

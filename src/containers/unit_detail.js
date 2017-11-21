@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-
+import PropTypes from 'prop-types'
 
 class UnitDetail extends Component {
   render() {
@@ -73,6 +73,12 @@ class UnitDetail extends Component {
       </div>
     );
   }
+}
+
+UnitDetail.propTypes = {
+  activeUnit: PropTypes.object,
+  searchResultUnits: PropTypes.array,
+  allUnits: PropTypes.object
 }
 
 function mapStateToProps(state){

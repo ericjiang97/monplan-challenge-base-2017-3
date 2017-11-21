@@ -5,6 +5,7 @@ import UnitDetail from '../containers/unit_detail'
 import { fetchAllUnits } from '../actions/action_fetch_all_units';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types'
 
 class Content extends Component {
   componentWillMount(){
@@ -26,6 +27,11 @@ class Content extends Component {
       </div>
     )
   }
+}
+
+Content.propTypes = {
+  allUnits: PropTypes.object,
+  fetchAllUnits: PropTypes.func
 }
 
 function mapStateToProps(state){
