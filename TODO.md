@@ -4,10 +4,11 @@
 
 - [X] Clear unit detail after new search
 - [ ] Conditionally rendering handle enjoy and learn score no response
+- [ ] Adjust unit list height when the search term is general (results in long list)
 - [ ] Set up GitHub page
-- [ ] Update README.md
+- [X] Update README.md
 - [X] Use PropTypes
-- [ ] Use JSDoc
+- [X] Use JSDoc
 - [X] Use StandardJS
 
 ### Long-term
