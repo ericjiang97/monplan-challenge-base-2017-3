@@ -4,6 +4,10 @@ import { selectUnit } from '../actions/action_select_unit'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
+/**
+ * container UnitList:
+ * represents a list of search result units
+ */
 class UnitList extends Component {
   constructor (props) {
     super(props)
@@ -11,8 +15,10 @@ class UnitList extends Component {
     this.renderList = this.renderList.bind(this)
   }
 
+  // @returns unit list item
   renderList () {
     return (
+      // map an array of units to unit list items
       this.props.searchResultUnits.map((unit) => {
         return (
           <li
@@ -25,10 +31,12 @@ class UnitList extends Component {
   }
 
   render () {
+    // when the search hasn't been kicked off
     if (!this.props.searchResultUnits) {
       return <div >Search for a unit to get started </div>
     }
 
+    // when there's no units in the search result
     if (this.props.searchResultUnits.length === 0) {
       return <div > No units found </div>
     }

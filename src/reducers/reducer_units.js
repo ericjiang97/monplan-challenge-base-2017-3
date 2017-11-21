@@ -24,6 +24,8 @@ export default function (state = initialState, action) {
     case SEARCH_UNITS:
       const searchTerm = action.payload.toLowerCase()
 
+      // units will be in search results
+      // if unit code or unit name contain search term
       var resultUnits = state.allUnits.data.filter((unit) => {
         return unit.unitName.toLowerCase().indexOf(searchTerm) !== -1 ||
         unit.unitCode.toLowerCase().indexOf(searchTerm) !== -1
@@ -32,6 +34,8 @@ export default function (state = initialState, action) {
       return {
         ...state,
         searchResultUnits: resultUnits,
+        // deactivate activated unit when search another unit
+        // for clearing unit detail
         activeUnit: null
       }
 

@@ -7,16 +7,23 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
+/**
+ * container Content:
+ * represents the content of the page excluding the app header
+ */
 class Content extends Component {
   componentWillMount () {
     this.props.fetchAllUnits()
   }
 
   render () {
+    // @returns spinner while all units are loading
     if (!this.props.allUnits) {
       return <i className="fa fa-circle-o-notch fa-spin fa-3x fa-fw" />
     }
 
+    // @returns containers search bar, unit list and unit detail
+    // after all units are loaded
     return (
       <div>
         <SearchBar />

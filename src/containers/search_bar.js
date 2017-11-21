@@ -4,6 +4,10 @@ import { searchUnits } from '../actions/action_search_units'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
+/**
+ * container SearchBar:
+ * represents the search bar
+ */
 class SearchBar extends Component {
   constructor (props) {
     super(props)
@@ -14,10 +18,12 @@ class SearchBar extends Component {
     this.onFormSubmit = this.onFormSubmit.bind(this)
   }
 
+  // @callback
   onInputChange (event) {
     this.setState({ term: event.target.value })
   }
 
+  // @callback
   onFormSubmit (event) {
     event.preventDefault()
     this.props.searchUnits(this.state.term)
