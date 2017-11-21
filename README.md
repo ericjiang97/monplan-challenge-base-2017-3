@@ -4,15 +4,15 @@ This project is a simple web app made with react and redux that can search for M
 ## Application Demo
 
 ### Step 1: Search for unit code or unit name
-![Alt text](/screenshots/screenshot1.png?raw=true "Monash Handbook Unit Viewer")
+![Alt text](/screenshots/screenshot1.PNG?raw=true "Monash Handbook Unit Viewer")
 
 
 ### Step 2: Select a unit from the search results
-![Alt text](/screenshots/screenshot2.png?raw=true "Monash Handbook Unit Viewer")
+![Alt text](/screenshots/screenshot2.PNG?raw=true "Monash Handbook Unit Viewer")
 
 
 ### Step 3: View unit details including enjoy score and learn score represented by scale bars
-![Alt text](/screenshots/screenshot3.png?raw=true "Monash Handbook Unit Viewer")
+![Alt text](/screenshots/screenshot3.PNG?raw=true "Monash Handbook Unit Viewer")
 
 
 ## Usage
