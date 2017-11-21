@@ -10,6 +10,7 @@
     "react-scripts": "1.0.14",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
+    "standard": "^10.0.3",
     "whatwg-fetch": "^2.0.3"
   },
   "scripts": {

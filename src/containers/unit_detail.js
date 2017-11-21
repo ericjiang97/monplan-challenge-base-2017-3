@@ -1,22 +1,22 @@
-import React, {Component} from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react'
+import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 class UnitDetail extends Component {
-  render() {
-    const units = this.props.allUnits;
-    const results = this.props.searchResultUnits;
-    const unit = this.props.activeUnit;
+  render () {
+    const units = this.props.allUnits
+    const results = this.props.searchResultUnits
+    const unit = this.props.activeUnit
 
-    if (!units || !results || results.length === 0){
-      return <div>  </div>
+    if (!units || !results || results.length === 0) {
+      return <div />
     }
 
-    if (results.length !== 0 && !unit){
+    if (results.length !== 0 && !unit) {
       return <div>Select a unit to view detail</div>
     }
 
-    const data = unit.data;
+    const data = unit.data
     return (
       <div className="col-sm-8">
         <h2 className="unit-code-name">{data.unitCode} - {data.unitName}</h2>
@@ -39,12 +39,12 @@ class UnitDetail extends Component {
 
           <strong>Prerequisites</strong>
           <br />
-          {(data.preqs)? data.preqs : 'None'}
+          {(data.preqs) ? data.preqs : 'None'}
           <br /><br />
 
           <strong>Prohibitions</strong>
           <br />
-          {(data.proh)? data.proh : 'None'}
+          {(data.proh) ? data.proh : 'None'}
           <br /><br />
 
           <strong>Faculty</strong>
@@ -59,19 +59,19 @@ class UnitDetail extends Component {
 
           <strong>Enjoy score</strong>
           <br />
-          <progress value={data.enjoyScore} max="5"></progress>
+          <progress value={data.enjoyScore} max="5" />
           <br />
           <p>{data.enjoyScore.toFixed(2)}</p>
 
           <strong>Learn score</strong>
           <br />
-          <progress value={data.learnScore} max="5"></progress>
+          <progress value={data.learnScore} max="5" />
           <br />
           <p>{data.learnScore.toFixed(2)}</p>
 
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -81,12 +81,12 @@ UnitDetail.propTypes = {
   allUnits: PropTypes.object
 }
 
-function mapStateToProps(state){
+function mapStateToProps (state) {
   return {
     activeUnit: state.units.activeUnit,
     searchResultUnits: state.units.searchResultUnits,
-    allUnits: state.units.allUnits,
-  };
+    allUnits: state.units.allUnits
+  }
 }
 
-export default connect(mapStateToProps)(UnitDetail);
+export default connect(mapStateToProps)(UnitDetail)

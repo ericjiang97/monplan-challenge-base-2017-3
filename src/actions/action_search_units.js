@@ -1,6 +1,6 @@
-import { SEARCH_UNITS } from '../constants/action_types';
+import { SEARCH_UNITS } from '../constants/action_types'
 
-export function searchUnits(term){
+export function searchUnits (term) {
   return (
     {
       type: SEARCH_UNITS,
